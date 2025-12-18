@@ -132,3 +132,27 @@ Before you submit your solution, you need to save your progress with git.
 3. Push your commits to GitHub by executing `git push origin main`.
 
 CodeGrade will grade your lab using the same tests as are provided in the `testing/` directory.
+
+
+# Flask SQLAlchemy Validations Lab
+
+## Features
+
+### Author model validations
+- Name is required
+- Name must be unique
+- Phone number must be exactly 10 digits
+
+### Post model validations
+- Title is required and cannot be clickbait
+- Content must be at least 250 characters long
+- Summary must be 250 characters or fewer
+- Category must be either `Fiction` or `Non-Fiction`
+
+## Testing
+
+All validations are covered by automated tests using `pytest`.
+
+## Screenshot
+
+![Test results](screenshot.png)
